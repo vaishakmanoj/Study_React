@@ -7,15 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root"></div>
-</body>
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script>
-    const heading = React.createElement("h1", {}, ["Hello world" ," ", "elements"])
-    const root = ReactDOM.createRoot(document.getElementById("root"))
-    root.render(heading)
+   
+    <div id="root">
+
+    not rendered
+    </div>
+
+<script 
+    crossorigin src="https://unpkg.com/react@18/umd/react.development.js">
 </script>
+<script 
+    crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+<script>
+    const heading = React.createElement("h1", {
+        id: "title",
+    }, "hello")
+    console.log(heading);
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(heading);
+ </script>
+ 
+ </body>
 </html>
 
 
